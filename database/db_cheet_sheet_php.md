@@ -138,4 +138,3 @@ Here are the common PHP Artisan commands related to database management in Larav
 
 ---
 
-These commands should cover most database-related tasks in Laravel. Let me know if you need further details on any command!
