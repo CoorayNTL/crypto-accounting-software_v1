@@ -29,8 +29,8 @@ Ensure the following tools are installed on your machine:
 #### **2. Clone the Repository**
 If the code is in a Git repository:
 ```bash
-git clone <repository_url>
-cd <repository_folder>
+git clone [<repository_url>](https://github.com/CoorayNTL/crypto-accounting-software_v1.git)
+cd rypto-accounting-software_v1
 ```
 
 ---
