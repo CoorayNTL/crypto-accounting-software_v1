@@ -57,8 +57,6 @@ class AuthController extends Controller
         ]);
     }
 
-
-
     public function logout()
     {
         JWTAuth::invalidate(JWTAuth::getToken());
@@ -72,11 +70,6 @@ class AuthController extends Controller
             'token' => JWTAuth::refresh(JWTAuth::getToken()),
         ]);
     }
-
-    // public function user()
-    // {
-    //     return response()->json(JWTAuth::user());
-    // }
 
     public function me()
     {

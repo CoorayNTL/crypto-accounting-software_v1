@@ -11,28 +11,25 @@ class Wallet extends Model
     protected $fillable = [
         'user_id',
         'crypto_id',
-        'quantity',
-        'purchase_price',
-        'current_value',
+        'balance',
+        'wallet_address',
     ];
 
-    /**
-     * The user that owns the wallet.
-     */
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    /**
-     * The crypto asset associated with the wallet.
-     */
     public function crypto()
     {
         return $this->belongsTo(CryptoPrice::class, 'crypto_id');
     }
 }
 
+
+// In practice, the number of wallets per user can range from one to several, depending on individual choices and needs. For instance,
+//  a user might use separate wallets for different cryptocurrencies,
+//employ hardware wallets for long-term storage, and software wallets for daily transactions.
 
 
 // Explanation:
