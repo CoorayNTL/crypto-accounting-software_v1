@@ -15,25 +15,16 @@ class CryptoPrice extends Model
         'last_updated',
     ];
 
-    /**
-     * Get all transactions for a specific crypto.
-     */
     public function transactions()
     {
         return $this->hasMany(Transaction::class);
     }
 
-    /**
-     * Get all portfolios that include this crypto.
-     */
     public function portfolios()
     {
         return $this->hasMany(Portfolio::class);
     }
 
-    /**
-     * Get all wallets that hold this crypto.
-     */
     public function wallets()
     {
         return $this->hasMany(Wallet::class);

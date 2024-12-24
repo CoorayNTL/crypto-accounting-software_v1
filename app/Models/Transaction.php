@@ -16,17 +16,11 @@ class Transaction extends Model
         'transaction_date',
     ];
 
-    /**
-     * The user that owns the transaction.
-     */
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    /**
-     * The crypto asset associated with the transaction.
-     */
     public function crypto()
     {
         return $this->belongsTo(CryptoPrice::class, 'crypto_id');

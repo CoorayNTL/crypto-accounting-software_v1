@@ -14,17 +14,11 @@ class Portfolio extends Model
         'current_value',
     ];
 
-    /**
-     * The user that owns the portfolio.
-     */
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
-    /**
-     * The crypto asset associated with the portfolio.
-     */
     public function crypto()
     {
         return $this->belongsTo(CryptoPrice::class, 'crypto_id');
